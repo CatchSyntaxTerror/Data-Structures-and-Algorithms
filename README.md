@@ -1,4 +1,4 @@
-#📘 Data Structures and Algorithms
+# Data Structures and Algorithms
  
 
 This repository contains homework solutions and supporting code from **CS 362: Data Structures and Algorithms** at the University of New Mexico. Each assignment explores key algorithmic techniques and data abstractions through both written analysis and Python implementations.
@@ -7,7 +7,7 @@ This repository contains homework solutions and supporting code from **CS 362: D
 
 ## Contents
 
-### **Homework 1 – Linear Programming & Graph Algorithms**
+### **Homework 1**
 **Files:**
 - `CS362 HW1.pdf` – Assignment prompt
 - `Youssef_Amin_HW1.pdf` – Written solutions and explanations
