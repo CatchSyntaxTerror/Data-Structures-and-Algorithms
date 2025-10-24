@@ -3,6 +3,12 @@
 
 This repository contains homework solutions and supporting code from **CS 362: Data Structures and Algorithms** at the University of New Mexico. Each assignment explores key algorithmic techniques and data abstractions through both written analysis and Python implementations.
 
+For clear and detailed solution explanations, check out the accompanying LaTeX documents
+```
+Youssef_Amin_HW1.pdf
+Youssef_Amin_HW2.pdf
+```
+
 ---
 
 ## Contents
