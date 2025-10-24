@@ -218,13 +218,49 @@ def merge_trees(o1, o2):
 
 #test
 #creation of trees not involved in runtime
-tree1 = make_tree_from_list([5, 1, 3, 7, 9])
-tree2 = make_tree_from_list([4, 2, 6, 8])
+# tree1 = make_tree_from_list([5, 1, 3, 7, 9])
+# tree2 = make_tree_from_list([4, 2, 6, 8])
 
-order1 = tree1.in_order_traversal()
-order2 = tree2.in_order_traversal()
-merged = merge_trees(order1, order2)
+# order1 = tree1.in_order_traversal()
+# order2 = tree2.in_order_traversal()
+# merged = merge_trees(order1, order2)
 
-print(f"in order tree1: {order1}")
-print(f"in order tree2: {order2}")
-print(f"tree1 and tree2 merged: {merged}")
+# print(f"in order tree1: {order1}")
+# print(f"in order tree2: {order2}")
+# print(f"tree1 and tree2 merged: {merged}")
+
+
+# problem 5 finding the largest subsequence of monotonically increasing O(n^2)
+
+def find_mono_increasing(sequence):
+    """
+    Track the longest increasing subsequence using two lists:
+    one for sequence lengths, one for previous indices sort of like backtracking a path.
+    For each i, if sequence[i] > sequence[j], update its length and link to j.
+    Finally, build the subsequence by tracing back from the last index.
+    """
+    length = len(sequence)
+    largest = [1] * length
+    previous = [-1] * length
+    
+    for i in range(1, length):
+        for j in range(0, i):
+            if sequence[i] > sequence[j]:
+                if largest[i] < largest[j] + 1:
+                    largest[i] = largest[j] + 1
+                    previous[i] = j
+                    
+    max_i = largest.index(max(largest))
+    subsequence = []
+    while max_i >= 0:
+        subsequence = [sequence[max_i]] + subsequence
+        max_i = previous[max_i]
+        
+    return subsequence
+
+#tests
+A = [3, 10, 2, 1, 20]
+B = find_mono_increasing(A)
+
+print(f"A: {A}")
+print(f"B: {B}")
