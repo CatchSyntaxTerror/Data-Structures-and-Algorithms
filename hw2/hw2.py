@@ -234,10 +234,13 @@ def merge_trees(o1, o2):
 
 def find_mono_increasing(sequence):
     """
-    Track the longest increasing subsequence using two lists:
-    one for sequence lengths, one for previous indices sort of like backtracking a path.
-    For each i, if sequence[i] > sequence[j], update its length and link to j.
-    Finally, build the subsequence by tracing back from the last index.
+    Using two lists, track the longest increasing subsequece
+    Loop through sequence for each index i starts at 1 and j starts at 0
+    check if the sequence at i is greater than the sequence at j
+    if it is add the lessers largest counter to the current largest counter
+    record the index of the element that the current element is larger than at the current 
+    elements previous
+    This creats a back path that we can use to construct the largest monoincreasing subsequence  
     """
     length = len(sequence)
     largest = [1] * length
