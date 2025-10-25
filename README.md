@@ -31,27 +31,37 @@ Youssef_Amin_HW2.pdf
 
 ### **Homework 2**
 **Files:**
-- `Module_2__Advanced_Divide_and_Conquer.pdf` – Assignment
-- `hw2.py` – Implementations for the first three problems
+- `Module_2__Advanced_Divide_and_Conquer.pdf` – Assignment  
+- `Youssef_Amin_HW2.pdf` – Full written solutions and explanations  
+- `hw2.py` – Python implementations of all major problems  
 
 **Topics covered:**
-- Implementing a **stack** using a **binary search tree**
-- Merging two **min-heaps** in *O(m + n)* time
-- Combining two **BSTs** in *O(m + n)* time
-- Additional problems (not yet implemented) include:
-  - Linear-time selection with group size 6
-  - Dynamic programming for LIS
-  - Constant-space array permutation
-  - Dual-knapsack optimization
-  - Interval containment detection in *O(n log n)*
+1. **Implementing a Stack with a BST** – simulating LIFO behavior using an order-tracked Binary Search Tree.  
+2. **Combining Heaps** – merging two min-heaps in linear time using bottom-up heapify.  
+3. **Merging Binary Search Trees** – creating a unified in-order traversal in *O(m + n)* time.  
+4. **Linear-Time Selection with Groups of Six** – proving Θ(n) complexity via recurrence expansion.  
+5. **Longest Increasing Subsequence** – dynamic programming reconstruction using predecessor tracking.  
+6. **Sorting by Permutation** – constant-space in-place array reordering in *O(n)* time.  
+7. **Double Knapsack Problem** – 3D dynamic programming approach for optimal dual capacity allocation.  
+8. **Contained Interval Detection** – sorting by start and negative end points to find nested intervals in *O(n log n)*.  
+
+**Complexity Highlights:**
+- Most algorithms optimized to *O(n)* or *O(n log n)*.  
+- Careful use of recursion, iteration, and dynamic data structure manipulation.  
 
 ---
 
-## Tools & Libraries
-- **Language:** Python 3  
-- **Libraries:** `numpy`, `scipy.optimize.linprog` for linear programming problems  
+ **Concepts Reinforced**
+- Divide & Conquer strategies  
+- Dynamic Programming design patterns  
+- Tree and heap-based data structures  
+- In-place transformations and order maintenance  
 
 ---
+
+**Language:** Python 3  
+**Libraries:** None required beyond standard library   
+
 
 ## Author
 **Youssef Amin**  
