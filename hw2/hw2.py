@@ -259,8 +259,69 @@ def find_mono_increasing(sequence):
     return subsequence
 
 #tests
-A = [3, 10, 2, 1, 20]
-B = find_mono_increasing(A)
+# A = [3, 10, 2, 1, 20]
+# B = find_mono_increasing(A)
 
-print(f"A: {A}")
-print(f"B: {B}")
+# print(f"A: {A}")
+# print(f"B: {B}")
+
+# Problem 6: Sorting by permutation order
+
+def order_by_permutation(A, w):
+    """
+    Reorder A in place according to permutation w
+    """
+    n = len(A)
+    i = 0
+    while i < n:
+        if w[i] != i + 1:
+            j = w[i] - 1
+            A[i], A[j] = A[j], A[i]
+            w[i], w[j] = w[j], w[i]
+        else:
+            i += 1
+        
+        
+# tests
+# A = [10.5, 9.3, 2.7, 13.6]
+# w = [4, 2, 3, 1]
+# order_by_permutation(A, w)
+# print(f"A: {A}")
+# print(f"w: {w}") 
+# B = [2, 4, 6, 8]
+# mu = [4, 3, 2, 1]       
+# order_by_permutation(B, mu)
+# print(f"B: {B}")
+# print(f"mu: {mu}")
+
+# Problem 8: Finding intervals contained in other intervals
+ 
+def find_contained_intervals(intervals):
+    intervals.sort(key=lambda x: (x[0], -x[1]))
+    
+    contained = []
+    end_point = -100000
+    
+    for x1, x2 in intervals:
+        if x2 <= end_point:
+            contained.append((x1,x2))
+        else:
+            end_point = x2
+    return contained
+
+
+# tests
+intervals1 = [(1, 2), (3, 6), (4, 5), (0, 7)]
+print(f"  Original Intervals: {intervals1}")
+contained1 = find_contained_intervals(intervals1)
+print(f"  Contained Intervals: {contained1}\n")
+
+intervals2 = [(0, 2), (3, 6), (4, 5), (3, 7)]
+print(f"  Original Intervals: {intervals2}")
+contained2 = find_contained_intervals(intervals2)
+print(f"  Contained Intervals: {contained2}\n")
+
+intervals3 = [(0, 1), (3, 6), (4, 11), (3, 7)]
+print(f"  Original Intervals: {intervals3}")
+contained3 = find_contained_intervals(intervals3)
+print(f"  Contained Intervals: {contained3}")
