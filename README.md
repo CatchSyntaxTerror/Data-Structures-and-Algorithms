@@ -1,7 +1,5 @@
 
----
-
-## Contents
+# Data Structures and Algorithms
 
 ### **Homework 1**
 **Files:**
