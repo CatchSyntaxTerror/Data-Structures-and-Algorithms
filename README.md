@@ -15,7 +15,7 @@ Youssef_Amin_HW2.pdf
 
 ### **Homework 1**
 **Files:**
-- `CS362 HW1.pdf` – Assignment prompt
+- `CS362 HW1.pdf` – Assignment
 - `Youssef_Amin_HW1.pdf` – Written solutions and explanations
 - `hw1.py` – Python code implementing selected solutions
 
@@ -31,7 +31,7 @@ Youssef_Amin_HW2.pdf
 
 ### **Homework 2**
 **Files:**
-- `Module_2__Advanced_Divide_and_Conquer.pdf` – Assignment prompt
+- `Module_2__Advanced_Divide_and_Conquer.pdf` – Assignment
 - `hw2.py` – Implementations for the first three problems
 
 **Topics covered:**
